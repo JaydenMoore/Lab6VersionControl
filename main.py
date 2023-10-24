@@ -11,12 +11,15 @@ def main():
     option = int(input("Please enter an option: "))
 
     if option == 1:
+        #Encodes the password and stores it within the main function
         original_password = input("Please enter your password to encode: ")
         encoded_password = encode(original_password)
         print("Your password has been encoded and stored!")
     else:
+        #Decodes the password and informs the user of the new password
         password = input("Please enter your password to decode: ")
 
+#Takes a password and adds 3 to each integer in the string.
 def encode(password):
     encoded_password = ""
     for i in password:
