@@ -18,6 +18,8 @@ def main():
     else:
         #Decodes the password and informs the user of the new password
         password = input("Please enter your password to decode: ")
+        decoded_password = decode(password)
+        print(f"The encoded password is {password}, and the original password is {decoded_password}.")
 
 #Takes a password and adds 3 to each integer in the string.
 def encode(password):
@@ -26,7 +28,8 @@ def encode(password):
         encoded_password += str(int(i) + 3)
     return encoded_password
 
-def decode():
+def decode(password):
     pass
+    
 
 main()
